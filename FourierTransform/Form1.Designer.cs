@@ -47,6 +47,7 @@
             this.paramLabel = new System.Windows.Forms.Label();
             this.firstParam = new System.Windows.Forms.NumericUpDown();
             this.secondParam = new System.Windows.Forms.NumericUpDown();
+            this.statusLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.SelectedImage)).BeginInit();
             this.imageOpenMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fourierMag)).BeginInit();
@@ -231,11 +232,23 @@
             this.secondParam.Size = new System.Drawing.Size(120, 20);
             this.secondParam.TabIndex = 18;
             // 
+            // statusLabel
+            // 
+            this.statusLabel.AutoSize = true;
+            this.statusLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.statusLabel.ForeColor = System.Drawing.Color.Red;
+            this.statusLabel.Location = new System.Drawing.Point(25, 361);
+            this.statusLabel.Name = "statusLabel";
+            this.statusLabel.Size = new System.Drawing.Size(115, 24);
+            this.statusLabel.TabIndex = 19;
+            this.statusLabel.Text = "Open image";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1282, 663);
+            this.Controls.Add(this.statusLabel);
             this.Controls.Add(this.secondParam);
             this.Controls.Add(this.firstParam);
             this.Controls.Add(this.paramLabel);
@@ -292,6 +305,7 @@
         private System.Windows.Forms.Label paramLabel;
         private System.Windows.Forms.NumericUpDown firstParam;
         private System.Windows.Forms.NumericUpDown secondParam;
+        private System.Windows.Forms.Label statusLabel;
     }
 }
 
